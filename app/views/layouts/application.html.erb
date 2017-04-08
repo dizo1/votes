@@ -21,6 +21,9 @@
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
             <% if user_signed_in? %>
+            <%= link_to edit_user_registration_path do %>
+            <button type="button" class="btn btn-default navbar-btn">Edit Profile</button>
+            <% end %>
             <%= link_to destroy_user_session_path, method: :delete do %>
             <button type="button" class="btn-default navbar-btn">Log Out</button>
             <% end %>

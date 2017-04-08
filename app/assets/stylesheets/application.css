@@ -23,3 +23,6 @@
 a:hover{
   text-decoration: none;
 }
+.button{
+  padding-right: 40px;
+}
